@@ -1,2 +1,1 @@
-# data_science_pro_course
-Курс DA-PRO с цифровых кафедр
+# Курс "Аналитик данных PRO (PRO DA-6)"
