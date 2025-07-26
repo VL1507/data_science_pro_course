@@ -203,6 +203,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "openpyxl" },
     { name = "pandas" },
+    { name = "requests" },
     { name = "wikipedia" },
 ]
 
@@ -218,6 +219,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.3.1" },
+    { name = "requests", specifier = ">=2.32.4" },
     { name = "wikipedia", specifier = ">=1.4.0" },
 ]
 
