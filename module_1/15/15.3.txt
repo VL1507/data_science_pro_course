@@ -1,0 +1,53 @@
+Задание 1
+
+SELECT *
+FROM offices
+ORDER BY country, city
+
+
+Задание 2
+
+SELECT contactFirstName, contactLastName, creditLimit
+FROM customers
+WHERE creditLimit > 50000
+
+
+Задание 3
+
+SELECT contactFirstName, contactLastName, creditLimit
+FROM customers
+WHERE creditLimit = 0
+
+
+Задание 4
+
+SELECT *
+FROM offices
+WHERE country != 'USA'
+
+
+Задание 5
+
+SELECT *
+FROM products
+WHERE quantityInStock < 1000
+
+
+Задание 6
+
+SELECT *
+FROM orders
+WHERE orderDate > '2005-01-01' AND status = 'Shipped'
+
+
+Задание 7
+
+SELECT count(*)
+FROM products
+WHERE productLine = 'Vintage Cars'
+
+
+Задание 8
+
+SELECT count(*)
+FROM employees
