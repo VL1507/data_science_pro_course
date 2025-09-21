@@ -1,0 +1,38 @@
+Задание 1
+
+SELECT productLine, count(*) as count_productLine
+FROM products
+GROUP BY productLine
+
+
+Задание 2
+
+SELECT productLine, count(*) as count_productLine
+FROM products
+GROUP BY productLine
+HAVING count_productLine > 20
+
+
+Задание 3
+
+SELECT orderDate, count(*) as countOrdersByDate
+FROM orders
+GROUP BY orderDate
+ORDER BY countOrdersByDate DESC
+
+
+Задание 4
+
+SELECT State, count(*) countCustomersByState
+FROM customers
+WHERE country = 'USA'
+GROUP BY State
+
+
+Задание 5
+
+SELECT paymentDate, MAX(amount) AS max_amount
+FROM payments
+GROUP BY paymentDate
+ORDER BY max_amount DESC
+LIMIT 1
