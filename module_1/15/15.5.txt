@@ -1,0 +1,35 @@
+Задание 1
+
+SELECT e.firstName, e.lastName, o.country, o.city, o.addressLine1
+FROM employees AS e
+INNER JOIN offices AS o ON e.officeCode = o.officeCode
+
+Задание 2
+
+SELECT c.contactFirstName, c.contactLastName, o.orderDate, o.status
+FROM customers AS c
+INNER JOIN orders AS o ON o.customerNumber = c.customerNumber
+
+
+Задание 3
+
+SELECT c.contactFirstName, c.contactLastName, sum(p.amount)
+FROM customers AS c
+LEFT JOIN payments AS p ON p.customerNumber = c.customerNumber
+GROUP BY c.customerNumber
+
+Задание 4
+
+SELECT p.productName, o.orderDate
+FROM products AS p
+INNER JOIN orderdetails AS od ON p.productCode = od.productCode
+INNER JOIN orders AS o ON od.orderNumber = o.orderNumber
+ORDER BY o.orderDate
+
+Задание 5
+
+SELECT p.productName, count(*) AS countOrders
+FROM products AS p
+INNER JOIN orderdetails AS od ON p.productCode = od.productCode
+GROUP BY p.productName
+ORDER BY countOrders
