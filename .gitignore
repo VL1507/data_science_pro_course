@@ -1,4 +1,4 @@
-*.zip
+# *.zip
 archives/
 work/
 .vscode/
